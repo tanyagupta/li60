@@ -11,11 +11,16 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     return render_template('index.html')
-    
+
 
 @app.route('/tos')
 def flash_cards():
     return render_template('tos.html')
+
+@app.route('/helpnewsfinder')
+def subs():
+    return render_template('helpnewsfinder.html')
+
 
 
 
