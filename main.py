@@ -18,9 +18,12 @@ def flash_cards():
     return render_template('tos.html')
 
 @app.route('/helpnewsfinder')
-def subs():
+def help_newsfinder():
     return render_template('helpnewsfinder.html')
 
+@app.route('/helpwordcloudaddon')
+def help_wordcloudaddon():
+    return render_template('helpwordcloudaddon.html')
 
 
 
