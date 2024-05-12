@@ -1,6 +1,7 @@
-runtime: python27
-api_version: 1
-threadsafe: true
+runtime: python39
+
+env: standard
+entrypoint: gunicorn -b :$PORT app:app
 
 handlers:
 - url: /static
