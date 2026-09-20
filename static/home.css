@@ -126,3 +126,39 @@ h3 { margin-bottom: 12px; font-size: 1.28rem; }
   .product-card, .secondary-card { padding: 24px; }
   .button-muted { width: 100%; }
 }
+
+/* Shared legal-page layout */
+.legal-hero {
+  background: var(--soft);
+  border-bottom: 1px solid var(--line);
+}
+.legal-hero-inner { padding: 72px 0 68px; }
+.legal-hero h1 { max-width: 760px; margin-bottom: 14px; font-size: clamp(2.4rem, 5vw, 4rem); }
+.legal-hero-copy { max-width: 700px; margin: 0; color: var(--muted); font-size: 1.05rem; }
+.legal-shell { padding: 44px 0 88px; }
+.legal-back { display: inline-block; margin-bottom: 28px; color: var(--accent-dark); font-size: .9rem; font-weight: 700; text-decoration: none; }
+.legal-back:hover { color: var(--accent); }
+.legal-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 56px; align-items: start; }
+.legal-toc { position: sticky; top: 24px; padding: 20px; border: 1px solid var(--line); border-radius: 10px; background: var(--soft); }
+.legal-toc h2 { margin-bottom: 12px; font-size: .95rem; letter-spacing: -.01em; }
+.legal-toc ol { margin: 0; padding-left: 20px; }
+.legal-toc li { margin: 8px 0; }
+.legal-toc a { color: var(--accent-dark); font-size: .88rem; text-decoration: none; }
+.legal-toc a:hover { text-decoration: underline; }
+.legal-content { min-width: 0; }
+.legal-section { padding: 0 0 34px; margin: 0 0 34px; border-bottom: 1px solid var(--line); }
+.legal-section:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
+.legal-content h2 { margin-bottom: 18px; font-size: clamp(1.7rem, 3vw, 2.25rem); }
+.legal-content h3 { margin: 28px 0 10px; font-size: 1.12rem; letter-spacing: -.02em; }
+.legal-content h3:first-child { margin-top: 0; }
+.legal-content p { max-width: 760px; margin-bottom: 16px; color: var(--muted); }
+.legal-content a { color: var(--accent-dark); }
+.legal-content a:hover { color: var(--accent); }
+.legal-note { padding: 16px 18px; border-left: 3px solid var(--accent); background: var(--soft); }
+
+@media (max-width: 760px) {
+  .legal-hero-inner { padding: 56px 0 52px; }
+  .legal-shell { padding: 32px 0 64px; }
+  .legal-layout { grid-template-columns: 1fr; gap: 30px; }
+  .legal-toc { position: static; }
+}
